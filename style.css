@@ -1092,3 +1092,229 @@ footer {
     }
 
 }
+
+
+/* =================================
+   CONTACT FORM — ELEGANT REDESIGN
+================================= */
+
+.contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.contact .eyebrow {
+    margin-bottom: 22px;
+    letter-spacing: 0.25em;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact > p:not(.eyebrow) {
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+
+/* Social links */
+
+.social-links {
+    display: flex;
+    gap: 30px;
+    margin: 5px 0 45px;
+}
+
+.social-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #705b4c;
+    border-bottom: 1px solid #c8b5a5;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #292522;
+    border-color: #292522;
+}
+
+
+/* Form container */
+
+.contact-form {
+    width: 100%;
+    max-width: 680px;
+
+    background: #faf8f5;
+
+    padding: 45px;
+
+    border: 1px solid #e2d6cc;
+
+    box-shadow: 0 15px 40px rgba(65, 48, 38, 0.06);
+
+    text-align: left;
+}
+
+
+/* Form rows */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    font-family: var(--sans);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: #5d5048;
+
+    margin-bottom: 10px;
+}
+
+
+/* Input fields */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background: #f7f2ec;
+
+    border: 1px solid #e3d8ce;
+
+    border-radius: 3px;
+
+    color: #292522;
+
+    font-family: var(--sans);
+
+    font-size: 0.8rem;
+
+    line-height: 1.6;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder text */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a69a91;
+    font-size: 0.78rem;
+}
+
+
+/* Focus effect */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    background: #ffffff;
+
+    border-color: #a9907d;
+
+    box-shadow: 0 0 0 3px rgba(169, 144, 125, 0.10);
+}
+
+
+/* Message box */
+
+.form-group textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+.contact-form button {
+    width: 100%;
+
+    padding: 16px 24px;
+
+    background: #292522;
+
+    color: #ffffff;
+
+    border: 1px solid #292522;
+
+    border-radius: 2px;
+
+    font-family: var(--sans);
+
+    font-size: 0.75rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #8f7868;
+
+    border-color: #8f7868;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(65, 48, 38, 0.12);
+}
+
+
+/* Spam protection */
+
+.honeypot {
+    display: none !important;
+}
+
+
+/* Responsive */
+
+@media (max-width: 650px) {
+
+    .contact {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .social-links {
+        margin-bottom: 35px;
+    }
+
+}
